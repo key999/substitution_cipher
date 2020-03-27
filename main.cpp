@@ -10,8 +10,8 @@ short int generateKey();
 void recursive_encrypt(const std::string &message, const short int &key, std::string &temp, unsigned short int i = 0);
 
 int main(int argc, char **argv) {
-//    std::string message = "Hello, Coders School!";
-    std::string message = argv[1];
+//    const std::string message = "Hello, Coders School!";
+    const std::string message = argv[1];
     std::string temp = message;
 
     auto key = generateKey();
